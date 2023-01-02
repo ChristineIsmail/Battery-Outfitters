@@ -1,0 +1,96 @@
+.icons {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 260px;
+}
+.logos {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 8px;
+}
+
+.Location {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  /* position: fixed; */
+  margin-top: 620px;
+  margin-left: 7px;
+}
+
+@media only screen and(max-width:800px) {
+  .icons {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 260px;
+  }
+  .logos {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 7px;
+  }
+}
+
+@media only screen and(max-width:600px) {
+  .icons {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 240px;
+  }
+  .logos {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 6px;
+  }
+}
+
+@media only screen and(max-width:500px) {
+  .icons {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 220px;
+  }
+  .logos {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and(max-width:400px) {
+  .icons {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 220px;
+  }
+  .logos {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 4px;
+  }
+}
+
+@media only screen and(max-width:300px) {
+  .icons {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+  }
+  .logos {
+    height: 15px;
+    width: 15px;
+    margin-bottom: 5px;
+  }
+}

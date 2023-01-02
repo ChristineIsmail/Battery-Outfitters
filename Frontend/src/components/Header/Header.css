@@ -1,0 +1,332 @@
+/* .header-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: sticky;
+} */
+
+.image {
+  display: flex;
+  height: 80px;
+  width: 100px;
+  margin-right: 3%;
+  position: fixed;
+  z-index: 2;
+}
+.Location {
+  position: fixed;
+  margin-top: 620px;
+  margin-left: 15px;
+}
+.locc {
+  color: black;
+  text-decoration: none;
+}
+.loc1 {
+  text-decoration: none;
+  color: black;
+}
+
+.maintopsection-container {
+  position: relative;
+}
+
+.logo {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+body {
+  background: #b1bc9a;
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.header {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  background-color: #b6c19f;
+
+  height: 100px !important;
+  z-index: 10;
+}
+
+.mainInner {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.mainInner div {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+}
+#sidebarMenu {
+  margin-top: 5%;
+  transform: translateX(250px);
+  transition: transform 250ms ease-in-out;
+  /* background: linear-gradient(
+    180deg,
+    rgb(224, 138, 138) 20%,
+    rgb(10, 9, 9) 80%
+  ); */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 260px;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  line-height: 1em;
+  text-align: left;
+}
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+  border-top: 5px solid rgba(255, 255, 255, 0.1);
+}
+.sidebarMenuInner li {
+  list-style: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebarMenuInner li:hover {
+  background-color: rgba(255, 255, 255, 0.833);
+  color: black;
+}
+.sidebarMenuInner li button {
+  display: block;
+  font-size: 20px;
+  color: rgb(255, 252, 252);
+  font-weight: bold;
+}
+.sidebarMenuInner li button:hover {
+  color: black;
+}
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+
+  position: absolute;
+}
+.menu-item {
+  height: 70px;
+  font-size: 16px;
+}
+.video-style {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: relative;
+}
+input[type="checkbox"] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+
+  position: absolute;
+
+  cursor: pointer;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  top: 40px;
+  right: 60px;
+  height: 100px;
+  width: 60px;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 10px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    display: flex;
+    height: 55px;
+    width: 65px;
+    margin-right: 3%;
+    position: fixed;
+    z-index: 2;
+  }
+
+  #sidebarMenu {
+    margin-top: 5%;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 200px;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    line-height: 1em;
+    text-align: left;
+  }
+  .sidebarMenuInner li {
+    list-style: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .sidebarMenuInner li button {
+    display: block;
+    font-size: 12px;
+    color: rgb(255, 252, 252);
+    font-weight: bold;
+  }
+  .menu-item {
+    height: 50px;
+    /* font-size: 20px; */
+  }
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+
+    position: absolute;
+
+    cursor: pointer;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 7px;
+    right: 0px;
+    height: 100px;
+    width: 40px;
+  }
+}
+@media only screen and( max-width:400px) {
+  .image {
+    display: flex;
+    height: 40px;
+    width: 50px;
+    margin-right: 3%;
+    position: fixed;
+    z-index: 2;
+  }
+
+  #sidebarMenu {
+    margin-top: 5%;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 170px;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    line-height: 1em;
+    text-align: left;
+  }
+  .sidebarMenuInner li {
+    list-style: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 13px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .sidebarMenuInner li button {
+    display: block;
+    font-size: 10px;
+    color: rgb(255, 252, 252);
+    font-weight: bold;
+  }
+  .menu-item {
+    height: 30px;
+  }
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+
+    position: absolute;
+
+    cursor: pointer;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    top: 10px;
+    right: 20px;
+    height: 80px;
+    width: 30px;
+  }
+}
