@@ -75,7 +75,13 @@ function Header() {
       ) : null}
 
       <div>
-        <img className="image" src="logo.png" alt="logo"></img>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://instagram.com/battery_outfitters_lb?igshid=ZmRlMzRkMDU="
+        >
+          <img className="image" src="logo.png" alt="logo"></img>
+        </a>
       </div>
     </>
   );

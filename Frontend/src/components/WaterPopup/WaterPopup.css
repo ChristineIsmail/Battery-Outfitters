@@ -1,6 +1,42 @@
-.products-list-container {
-  padding: 20px;
+.water-products-list-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.close-icon {
-  z-index: 4;
+.water-close-icon {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  margin-left: 36%;
+  cursor: pointer;
+  margin-top: 3px;
+}
+.water-popup-body {
+  position: absolute;
+  left: 22%;
+  right: 15%;
+  bottom: 30%;
+  top: 30%;
+
+  margin: auto;
+  border-radius: 15px;
+  border-color: black;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 5;
+  height: 400px;
+  width: 40%;
+  display: grid;
+  grid-auto-flow: row;
+  scroll-behavior: auto;
+  gap: 1rem;
+  overflow-x: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  margin-left: 5px;
+}
+.water-popup-container {
+  z-index: 16;
 }

@@ -1,4 +1,4 @@
-.popup-container {
+.battery-popup-container {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -7,9 +7,9 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
+  z-index: 16;
 }
-.popup-body {
+.battery-popup-body {
   position: absolute;
   left: 22%;
   right: 15%;
@@ -19,7 +19,7 @@
   margin: auto;
   border-radius: 15px;
   border-color: black;
-  background: grey;
+  background: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 5;
   height: 572px;
@@ -35,7 +35,7 @@
   margin-left: 5px;
 }
 
-.popup-overlay {
+.battery-popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -43,41 +43,42 @@
   bottom: 0;
   z-index: 4;
 }
-.products-main-container {
+.battery-products-main-container {
   text-align: center;
 }
 
-.products-list-container {
+.battery-products-list-container {
+  margin-top: 5%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: -15px;
 }
-.close-icon {
+.battery-close-icon {
   position: fixed;
   height: 40px;
   width: 40px;
-  margin-left: 47%;
+
   cursor: pointer;
+  margin-left: 60%;
 }
 @media only screen and (max-width: 550px) {
-  .close-icon {
+  .battery-close-icon {
     margin-left: 40%;
   }
 }
 @media only screen and (max-width: 280px), (max-height: 1000px) {
-  .popup-body {
+  .battery-popup-body {
     width: 65%;
   }
-  .close-icon {
+  /* .battery-close-icon {
     margin-left: 50%;
-  }
+  } */
 }
 @media only screen and (min-width: 1330px) {
-  .popup-body {
+  .battery-popup-body {
     width: 50%;
   }
-  .close-icon {
+  .battery-close-icon {
     margin-left: 47%;
   }
 }

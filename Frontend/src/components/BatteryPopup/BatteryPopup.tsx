@@ -6,6 +6,7 @@ import ProductsCard from "../ProductsCard/ProductsCard";
 type BatteryPopupProps = {
   closePopup: any;
 };
+
 function BatteryPopup(props: BatteryPopupProps) {
   const products = [
     {
@@ -52,27 +53,27 @@ function BatteryPopup(props: BatteryPopupProps) {
     },
   ];
   return (
-    <div className="popup-container">
-      <div className="popup-overlay" onClick={props.closePopup}></div>
-      <div className="popup-body">
-        <div className="products-main-container" id="products">
-          <div className="products-list-container">
+    <div className="battery-popup-container">
+      <div className="battery-popup-overlay" onClick={props.closePopup}></div>
+      <div className="battery-popup-body">
+        <div className="battery-products-main-container" id="battery-products">
+          <div className="battery-products-list-container">
             {products.length > 0 &&
               products.map((product: any, index: number) => {
                 return (
                   <ProductsCard
                     key={index}
                     description={product.description}
-                    image={product.image}
+                    image={product.image ? product.image : "default.jpg"}
                   />
                 );
               })}
           </div>
-        </div>{" "}
+        </div>
         <img
           src="close.png"
           alt="close"
-          className="close-icon"
+          className="battery-close-icon"
           onClick={props.closePopup}
         />
       </div>

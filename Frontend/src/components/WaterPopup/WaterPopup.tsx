@@ -19,18 +19,18 @@ function WaterPopup(props: WaterPopupProps) {
     },
   ];
   return (
-    <div className="popup-container">
-      <div className="popup-overlay" onClick={props.closePopup}></div>
+    <div className="water-popup-container">
+      <div className="water-popup-overlay" onClick={props.closePopup}></div>
 
-      <div className="popup-body">
+      <div className="water-popup-body">
         <img
           src="close.png"
           alt="close"
-          className="close-icon"
+          className="water-close-icon"
           onClick={props.closePopup}
         />
-        <div className="products-main-container" id="products">
-          <div className="products-list-container">
+        <div className="water-products-main-container" id="products">
+          <div className="water-products-list-container">
             {waters.length > 0 &&
               waters.map((product: any, index: number) => {
                 return (

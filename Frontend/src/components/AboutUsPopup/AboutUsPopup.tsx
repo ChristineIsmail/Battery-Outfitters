@@ -5,14 +5,14 @@ type AboutUsPopupProps = {
 };
 function AboutUpPopup(props: AboutUsPopupProps) {
   return (
-    <div className="popup-container">
-      <div className="popup-overlay" onClick={props.closePopup}></div>
+    <div className="aboutus-popup-container">
+      <div className="aboutus-popup-overlay" onClick={props.closePopup}></div>
 
-      <div className="popup-body">
+      <div className="aboutus-popup-body">
         <img
           src="close.png"
           alt="close"
-          className="close-icon"
+          className="aboutus-close-icon"
           onClick={props.closePopup}
         />
         <div className="all-p">
