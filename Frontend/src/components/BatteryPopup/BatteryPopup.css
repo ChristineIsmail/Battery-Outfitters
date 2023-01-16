@@ -59,9 +59,9 @@
   width: 40px;
 
   cursor: pointer;
-  margin-left: 60%;
+  margin-left: 45%;
 }
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px) {
   .battery-close-icon {
     margin-left: 40%;
   }
@@ -73,12 +73,20 @@
   /* .battery-close-icon {
     margin-left: 50%;
   } */
-}
+/* }
 @media only screen and (min-width: 1330px) {
   .battery-popup-body {
     width: 50%;
   }
   .battery-close-icon {
     margin-left: 47%;
+  }
+} */
+@media only screen and (max-width: 550px) {
+  .battery-close-icon {
+    margin-left: 40%;
+  }
+  .battery-popup-body {
+    height: 430px;
   }
 }
