@@ -65,3 +65,30 @@
     /* width: 200px; */
   }
 }
+@media only screen and (max-width: 1115px) {
+  .aboutus-close-icon {
+    margin-left: 43%;
+  }
+  .aboutus-popup-body {
+    height: 350px;
+    /* width: 200px; */
+  }
+}
+@media only screen and (max-width: 850px) {
+  .aboutus-close-icon {
+    margin-left: 41%;
+  }
+  .aboutus-popup-body {
+    height: 350px;
+    /* width: 200px; */
+  }
+}
+@media only screen and (max-width: 450px) {
+  .aboutus-close-icon {
+    margin-left: 35%;
+  }
+  .aboutus-popup-body {
+    height: 350px;
+    /* width: 200px; */
+  }
+}

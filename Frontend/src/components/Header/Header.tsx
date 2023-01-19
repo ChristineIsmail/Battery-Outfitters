@@ -7,6 +7,7 @@ import BatteryPopup from "../BatteryPopup/BatteryPopup";
 
 import WaterPopup from "../WaterPopup/WaterPopup";
 import AboutUsPopup from "../AboutUsPopup/AboutUsPopup";
+import Logo from "../../assets/logo.png";
 
 function Header() {
   const [isBatteryPopup, setBatteryPopup] = useState(false);
@@ -80,7 +81,7 @@ function Header() {
           rel="noreferrer"
           href="https://instagram.com/battery_outfitters_lb?igshid=ZmRlMzRkMDU="
         >
-          <img className="image" src="logo.png" alt="logo"></img>
+          <img className="image" src={Logo} alt="logo"></img>
         </a>
       </div>
     </>
