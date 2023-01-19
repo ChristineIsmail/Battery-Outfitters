@@ -1,23 +1,26 @@
 import React from "react";
 import "./WaterPopup.css";
 import ProductsCard from "../ProductsCard/ProductsCard";
+import data from "../../Data.json";
+
 type WaterPopupProps = {
   closePopup: any;
 };
 
 function WaterPopup(props: WaterPopupProps) {
-  const waters = [
-    {
-      description:
-        "Aqua Purifiée. Distilled water 1 US Gallon (3.8Liters) Suitable for batteries, iron, car radiator, and car wipers.",
-      image: "small.jpg",
-    },
-    {
-      description:
-        "Aqua Purifiée. Distilled water 10 Liters Suitable for batteries, iron, car radiator, and car wipers.",
-      image: "big.jpg",
-    },
-  ];
+  const waterTypes = data.watertypes;
+  // const waters = [
+  //   {
+  //     description:
+  //       "Aqua Purifiée. Distilled water 1 US Gallon (3.8Liters) Suitable for batteries, iron, car radiator, and car wipers.",
+  //     image: "small.jpg",
+  //   },
+  //   {
+  //     description:
+  //       "Aqua Purifiée. Distilled water 10 Liters Suitable for batteries, iron, car radiator, and car wipers.",
+  //     image: "big.jpg",
+  //   },
+  // ];
   return (
     <div className="water-popup-container">
       <div className="water-popup-overlay" onClick={props.closePopup}></div>
@@ -31,8 +34,8 @@ function WaterPopup(props: WaterPopupProps) {
         />
         <div className="water-products-main-container" id="products">
           <div className="water-products-list-container">
-            {waters.length > 0 &&
-              waters.map((product: any, index: number) => {
+            {waterTypes.length > 0 &&
+              waterTypes.map((product: any, index: number) => {
                 return (
                   <ProductsCard
                     key={index}
