@@ -62,4 +62,5 @@
   margin-bottom: 10px;
   z-index: 7;
   border-radius: 20px;
+  object-fit: cover;
 }

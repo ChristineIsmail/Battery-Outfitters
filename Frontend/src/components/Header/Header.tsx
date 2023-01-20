@@ -8,15 +8,17 @@ import BatteryPopup from "../BatteryPopup/BatteryPopup";
 import WaterPopup from "../WaterPopup/WaterPopup";
 import AboutUsPopup from "../AboutUsPopup/AboutUsPopup";
 import Logo from "../../assets/logo.png";
+import LoginPopup from "../LoginPopup/LoginPopup";
 
 function Header() {
   const [isBatteryPopup, setBatteryPopup] = useState(false);
   const [isWaterPopup, setWaterPopup] = useState(false);
   const [isAboutUsPopup, setAboutUsPopup] = useState(false);
   const [isSideBar, setSideBar] = useState(false);
+  const [isLoginPopup, setLoginPopup] = useState(false);
   const closePopup = () => {
     setBatteryPopup(false);
-
+    setLoginPopup(false);
     setWaterPopup(false);
     setAboutUsPopup(false);
     setSideBar(true);
@@ -45,6 +47,7 @@ function Header() {
       {/* {isBatteryPopup || isContactUsPopup || isAboutUsPopup || isWaterPopup
         ? setSideBar(false)
         : null} */}
+      {isLoginPopup ? <LoginPopup closePopup={() => closePopup()} /> : null}
 
       <input
         type="checkbox"
@@ -76,13 +79,17 @@ function Header() {
       ) : null}
 
       <div>
-        <a
+        {/* <a
           target="_blank"
           rel="noreferrer"
-          href="https://instagram.com/battery_outfitters_lb?igshid=ZmRlMzRkMDU="
-        >
-          <img className="image" src={Logo} alt="logo"></img>
-        </a>
+          // href="https://instagram.com/battery_outfitters_lb?igshid=ZmRlMzRkMDU="
+        > */}
+        <img
+          className="image"
+          src={Logo}
+          alt="logo"
+          onClick={() => setLoginPopup(true)}
+        ></img>
       </div>
     </>
   );

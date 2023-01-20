@@ -59,7 +59,7 @@
   width: 40px;
 
   cursor: pointer;
-  margin-left: 45%;
+  margin-left: 46%;
 }
 /* @media only screen and (max-width: 550px) {
   .battery-close-icon {
@@ -82,11 +82,36 @@
     margin-left: 47%;
   }
 } */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 555px) {
   .battery-close-icon {
-    margin-left: 40%;
+    margin-left: 30%;
   }
   .battery-popup-body {
     height: 430px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .battery-close-icon {
+    margin-left: 25%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .battery-close-icon {
+    margin-left: 38%;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .battery-close-icon {
+    margin-left: 35%;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .battery-close-icon {
+    margin-left: 30%;
+  }
+}
+@media only screen and (max-width: 1115px) {
+  .battery-close-icon {
+    margin-left: 40%;
   }
 }
