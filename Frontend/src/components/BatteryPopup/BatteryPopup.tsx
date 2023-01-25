@@ -3,6 +3,7 @@ import React from "react";
 import "./BatteryPopup.css";
 import ProductsCard from "../ProductsCard/ProductsCard";
 import data from "../../Data.json";
+import Default from "../../assets/default.jpg";
 
 type BatteryPopupProps = {
   closePopup: any;
@@ -66,7 +67,7 @@ function BatteryPopup(props: BatteryPopupProps) {
                   <ProductsCard
                     key={index}
                     description={product.description}
-                    image={product.image ? product.image : "default.jpg"}
+                    image={product.image ? product.image : ""}
                   />
                 );
               })}

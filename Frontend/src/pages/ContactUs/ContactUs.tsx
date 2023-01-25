@@ -30,19 +30,20 @@ function ContactUs() {
         </a>
       </div>
       <div className="Location">
-        <Box sx={{ "& > :not(style)": { m: 1 } }}>
-          <Fab variant="extended">
-            <NavigationIcon sx={{ mr: 1 }} />
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://maps.app.goo.gl/rxGjJcQS2EBJqtnD9"
-              className="locc"
-            >
+        {" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://maps.app.goo.gl/rxGjJcQS2EBJqtnD9"
+          className="locc"
+        >
+          <Box sx={{ "& > :not(style)": { m: 1 } }}>
+            <Fab variant="extended">
+              <NavigationIcon sx={{ mr: 1 }} />
               Location
-            </a>
-          </Fab>
-        </Box>
+            </Fab>
+          </Box>
+        </a>
       </div>
     </div>
   );

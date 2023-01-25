@@ -13,7 +13,7 @@
   position: absolute;
   left: 22%;
   right: 15%;
-  bottom: 30%;
+  bottom: 22%;
   top: 30%;
   text-align: center;
   margin: auto;
@@ -55,12 +55,14 @@
   flex-wrap: wrap;
 }
 .water-close-icon {
-  position: fixed;
+  position: absolute;
   height: 40px;
   width: 40px;
-  margin-top: -220px;
+  /* margin-top: -200px; */
   cursor: pointer;
-  margin-left: 46%;
+  /* margin-left: 46%; */
+  top: 5px;
+  right: 5px;
 }
 @media only screen and (max-width: 550px) {
   .water-close-icon {
@@ -73,13 +75,8 @@
   }
 }
 @media only screen and (max-width: 820px) {
-  .water-close-icon {
-    margin-left: 44%;
-    z-index: 300;
-    margin-top: -226px;
-  }
   .water-popup-body {
-    height: 277px;
+    height: 400px;
   }
 }
 @media only screen and (max-width: 480px) {

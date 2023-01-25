@@ -153,18 +153,18 @@ input[type="checkbox"] {
 .sidebarIconToggle {
   transition: all 0.3s;
   box-sizing: border-box;
-
+  background-color: #d5c9c991;
   position: absolute;
-
   cursor: pointer;
   z-index: 15;
   height: fit-content;
-
+  border-radius: 100%;
   top: 30px;
   right: 30px;
-
-  width: 50px;
+  padding: 10px;
+  width: 58px;
 }
+
 .spinner {
   transition: all 0.3s;
   box-sizing: border-box;
@@ -268,9 +268,9 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     z-index: 15;
     height: 100%;
     width: 100%;
-    top: 7px;
-    right: 0px;
-    height: 100px;
-    width: 40px;
+    top: 19px;
+    right: 19px;
+    height: 55px;
+    width: 57px;
   }
 }

@@ -55,6 +55,7 @@ function Header() {
         id="openSidebarMenu"
         onClick={() => setSideBar(true)}
       />
+
       <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
         <div className="spinner diagonal part-1"></div>
         <div className="spinner horizontal"></div>
@@ -79,17 +80,18 @@ function Header() {
       ) : null}
 
       <div>
-        {/* <a
+        <a
           target="_blank"
           rel="noreferrer"
-          // href="https://instagram.com/battery_outfitters_lb?igshid=ZmRlMzRkMDU="
-        > */}
-        <img
-          className="image"
-          src={Logo}
-          alt="logo"
-          onClick={() => setLoginPopup(true)}
-        ></img>
+          href="https://instagram.com/battery_outfitters_lb?igshid=ZmRlMzRkMDU="
+        >
+          <img
+            className="image"
+            src={Logo}
+            alt="logo"
+            // onClick={() => setLoginPopup(true)}
+          ></img>
+        </a>
       </div>
     </>
   );
