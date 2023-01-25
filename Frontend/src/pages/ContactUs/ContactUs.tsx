@@ -30,7 +30,6 @@ function ContactUs() {
         </a>
       </div>
       <div className="Location">
-        {" "}
         <a
           target="_blank"
           rel="noreferrer"

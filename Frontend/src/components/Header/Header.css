@@ -223,7 +223,6 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   }
 
   #sidebarMenu {
-    /* margin-top: 5%; */
     transform: translateX(250px);
     transition: transform 250ms ease-in-out;
 
