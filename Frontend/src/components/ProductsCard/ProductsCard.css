@@ -51,7 +51,7 @@
 .back-face h1,
 .back-face p {
   height: 110%;
-  width: 100%;
+  width: 111%;
   margin: 0;
   background-color: rgb(234, 159, 159);
   border-radius: 20px;
@@ -61,8 +61,8 @@
 }
 
 .product-box-image {
-  width: 162px;
-  height: 129px;
+  width: 165px;
+  height: 135px;
   margin-bottom: 10px;
   z-index: 7;
   border-radius: 20px;
