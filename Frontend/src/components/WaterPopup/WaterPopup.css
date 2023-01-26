@@ -65,11 +65,11 @@
   right: 5px;
 }
 @media only screen and (max-width: 550px) {
-  .water-close-icon {
+  /* .water-close-icon {
     margin-left: 40%;
     z-index: 300;
     margin-top: -300px;
-  }
+  } */
   .water-popup-body {
     height: 350px;
   }
@@ -79,10 +79,10 @@
     height: 400px;
   }
 }
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   .water-close-icon {
     margin-left: 39%;
     z-index: 300;
     margin-top: -226px;
   }
-}
+} */
