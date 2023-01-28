@@ -58,7 +58,6 @@ body {
   max-width: 100%;
   box-shadow: none;
   background-color: #b6c19f;
-
   height: 100px !important;
   z-index: 10;
 }
@@ -98,7 +97,6 @@ body {
 .sidebarMenuInner {
   margin: 0;
   padding: 0;
-
   margin-top: 80px;
 }
 .sidebarMenuInner li {
@@ -128,7 +126,6 @@ body {
 
 input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
-
   position: absolute;
 }
 .menu-item {
@@ -225,7 +222,6 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   #sidebarMenu {
     transform: translateX(250px);
     transition: transform 250ms ease-in-out;
-
     background-color: #d5c9c9a1;
     position: fixed;
     width: 150px;
@@ -260,9 +256,7 @@ input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   .sidebarIconToggle {
     transition: all 0.3s;
     box-sizing: border-box;
-
     position: absolute;
-
     cursor: pointer;
     z-index: 15;
     height: 100%;
