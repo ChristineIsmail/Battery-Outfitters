@@ -23,7 +23,7 @@
 .front-face {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 105%;
   backface-visibility: hidden;
   border-radius: 15px;
   cursor: pointer;

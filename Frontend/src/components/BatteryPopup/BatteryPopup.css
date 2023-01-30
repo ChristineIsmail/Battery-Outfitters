@@ -22,7 +22,7 @@
   background: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 5;
-  height: 572px;
+  height: 499px;
   width: 50%;
   display: grid;
   grid-auto-flow: row;
@@ -91,15 +91,24 @@
   .battery-popup-body {
     height: 430px;
   }
+  .battery-products-list-container {
+    margin-top: 10%;
+  }
 }
 @media only screen and (max-width: 450px) {
   .battery-close-icon {
     margin-left: 25%;
   }
+  .battery-products-list-container {
+    margin-top: 10%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .battery-close-icon {
     margin-left: 38%;
+  }
+  .battery-products-list-container {
+    margin-top: 10%;
   }
 }
 @media only screen and (max-width: 1040px) {

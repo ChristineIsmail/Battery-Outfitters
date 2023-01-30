@@ -38,11 +38,11 @@
   "watertypes": [
     {
       "description": "Aqua Purifiée. Distilled water 1 US Gallon (3.8Liters) Suitable for batteries, iron, car radiator, and car wipers.",
-      "image": "3.8L.jpg"
+      "image": "3.8 L.jpg"
     },
     {
       "description": "Aqua Purifiée. Distilled water 10 Liters Suitable for batteries, iron, car radiator, and car wipers.",
-      "image": "10L.jpg"
+      "image": "10 L.jpg"
     }
   ],
   "users": [{ "username": "christine", "password": "123" }]
