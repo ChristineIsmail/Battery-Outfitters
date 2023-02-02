@@ -126,3 +126,30 @@
     margin-left: 40%;
   }
 }
+@media only screen and (max-width: 280px) {
+  .battery-popup-body {
+    position: absolute;
+    left: 22%;
+    right: 15%;
+    bottom: 30%;
+    top: 30%;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    border-color: black;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 5;
+    height: 499px;
+    width: 68%;
+    display: grid;
+    grid-auto-flow: row;
+    scroll-behavior: auto;
+    gap: 1rem;
+    overflow-x: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-left: 5px;
+  }
+}

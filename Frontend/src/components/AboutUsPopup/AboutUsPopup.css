@@ -108,6 +108,12 @@
     /* width: 200px; */
   }
 }
+@media only screen and (max-width: 280px) {
+  .aboutus-popup-body {
+    /* height: 350px; */
+    width: 68%;
+  }
+}
 /* 
 @media only screen and (max-width: 850px) {
   .aboutus-close-icon {
